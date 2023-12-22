@@ -1,0 +1,51 @@
+.tariff-card.btn-gradient-1-outline {
+  >span{
+    gap: .5rem;
+  }
+	max-width: 400px;
+	width: 100%;
+	border-radius: 50px;
+	background: transparent;
+	height: 326px;
+	&::before {
+		border-radius: 50px;
+		background-color: #1c0a22;
+	}
+	&:hover::before {
+		opacity: 1;
+	}
+
+	&:hover {
+		background: var(--gradient1);
+	}
+	button {
+		background: var(--secondary);
+		color: var(--secondary-light);
+		height: 50px;
+		padding: 0 2rem;
+		border-radius: 50px;
+		&:hover {
+			background: var(--gradient1);
+			color: white;
+			cursor: pointer;
+		}
+	}
+}
+
+.tariffs{
+  margin: 2rem 0;
+}
+
+.tariffs > div{
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media screen and (width <= 1000px){
+  .tariffs > div{
+    flex-direction: column;
+  }
+}

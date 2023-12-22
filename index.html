@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Znakomstva</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body class="bg-primary">
+  <img src="assets/images/left.svg" class="left-img" alt="left">
+  <img src="assets/images/right.svg" class="right-img" alt="right">
+
+  <!-- -----------Navbar Starts----------- -->
+  <nav class="navbar flex ai-center jc-center gap-2 bg-dark h-50">
+    <h1 class="text-white text-16-500">Знакомства по всему миру</h1>
+
+    <div class="flex ai-center jc-center gap-2">
+      <img src="assets/images/united-states 1-1.svg" alt="america flag">
+      <select class="text-white bg-dark text-16-400">
+        <option>Америка</option>
+      </select>
+    </div>
+
+  </nav>
+  <!-- -----------Navbar Ends----------- -->
+
+  <main class="container">
+    <!-- ----------Header starts---------- -->
+    <header class="header py-4">
+      <ul class="flex ai-center jc-end gap-3">
+        <li class="mr-auto">
+          <a href="">
+            <img src="assets/images/logo-1.svg" alt="">
+          </a>
+        </li>
+
+        <li><a href="" class="text-white text-16-400">Впервые здесь?</a></li>
+
+        <li>
+          <a href="./pages/register.html" class="btn-gradient-1-outline h-50">
+            <span>Регистрация</span>
+          </a>
+        </li>
+
+      </ul>
+    </header>
+    <!------------ Header ends---------- -->
+
+    <!-- -----------Login Section starts----------- -->
+    <section>
+      <div class="login flex flex-col gap-3">
+        <h1 class="text-white text-60-500 text-center">Знакомства без преград</h1>
+        <p class="text-white text-16-400 text-center">
+          Для современного мира сплочённость команды профессионалов однозначно фиксирует необходимость <br> системы
+          обучения
+          кадров,
+          соответствующей насущным потребностям.
+        </p>
+
+        <form class="login__form flex flex-col gap-1">
+
+          <div class="input-group">
+            <img src="assets/icons/message 1.svg" alt="message">
+            <input type="email" placeholder="Введите электронную почту"
+              class="w-full h-full bg-transparent text-secondary-light text-16-400">
+          </div>
+
+
+          <div class="input-group">
+            <img src="assets/icons/password 1.svg" alt="password">
+            <input type="password" placeholder="Введите пароль"
+              class="w-full h-full bg-transparent text-secondary-light text-16-400">
+
+            <img src="assets/icons/eye 1.svg" alt="eye">
+          </div>
+
+          <a href="./pages/home.html"
+            class="flex ai-center jc-center rounded bg-gradient-1 h-70 text-16-500 text-white w-full">
+            Войти
+          </a>
+
+          <button type="button" id="forget-btn" class="bg-transparent text-link text-14-400 text-center w-full my-3">
+            Я не помню пароль
+          </button>
+
+        </form>
+
+      </div>
+    </section>
+    <!------------- Login Section ends----------- -->
+
+    <!-- --------------Footer starts ---------------->
+    <footer>
+      <ul>
+        <li><a href="">О нас</a></li>
+        <li><a href="">Поддержка</a></li>
+        <li><a href="">Советы</a></li>
+        <li><a href="">Контакты</a></li>
+        <li><a href="">Правила оплаты</a></li>
+        <li class="ml-auto"><a href=""> Политика обработки персональных данных</a></li>
+        <li class="pl-4">
+          <select>
+            <option value="">RU</option>
+            <option value="">UZB</option>
+          </select>
+        </li>
+        <li class="pl-4">© Company 2021</li>
+      </ul>
+    </footer>
+    <!---------------- Footer ends ---------------->
+  </main>
+
+  <!---------///////////// Modal window starts-------///////////// -->
+  <div class="modal" id="forget-modal">
+    <div class="wrapper">
+
+      <h1 class="text-white">Я не помню пароль</h1>
+      <p class="text-secondary-light text-16-400">
+        Введи свой email и мы вышлем тебе инструкции по изменению пароля
+      </p>
+
+      <form class="flex flex-col gap-2 mt-3">
+
+        <div class="input-group">
+          <img src="assets/icons/message 1.svg" alt="message">
+          <input type="email" placeholder="Введите электронную почту"
+            class="w-full h-full bg-transparent text-secondary-light text-16-400">
+        </div>
+
+        <a href="" class="flex ai-center jc-center rounded bg-gradient-1 h-70 text-16-500 text-white w-full">
+          Войти
+        </a>
+
+      </form>
+
+    </div>
+  </div>
+  <!-- -------/////////////Modal window ends -------/////////////-->
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

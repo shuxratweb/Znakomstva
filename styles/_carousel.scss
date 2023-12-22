@@ -1,0 +1,99 @@
+.carousel {
+	padding: 2rem 100px;
+	position: relative;
+	&__btns {
+		position: absolute;
+		top: calc(50% - 35px);
+		left: 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		button.btn-gradient-1-outline {
+			padding: 0;
+			height: 70px;
+			width: 70px;
+			cursor: pointer;
+		}
+	}
+}
+
+.carousel-item {
+	display: grid;
+	grid-template-columns: 380px 1fr;
+	gap: 2rem;
+}
+
+.main-image {
+	border-radius: 50px;
+	overflow: hidden;
+	position: relative;
+	> img:nth-child(2) {
+		position: absolute;
+		top: 2rem;
+		left: 2rem;
+	}
+	> button {
+		position: absolute;
+		bottom: 2rem;
+		left: calc(50% - 35px);
+	}
+}
+.mini-images {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	img {
+		width: min(89px, 15vmin);
+		height: min(89px, 15vmin);
+		border-radius: min(20px, 4vmin );
+		object-fit: cover;
+	}
+}
+
+.person-info {
+	> div {
+		h1 {
+			font-size: 32px;
+			font-weight: 500;
+			line-height: 48px;
+			letter-spacing: 0em;
+		}
+		h1.online-member::before {
+			box-shadow: 0px 4px 20px 0px #33e159;
+			width: 14px;
+			height: 14px;
+		}
+	}
+
+	> div .row {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		> div {
+			flex-grow: 1;
+			border: 1px solid #4a2956;
+			border-style: dashed;
+		}
+	}
+}
+
+@media screen and (width <=1000px) {
+	.carousel {
+		padding: 2rem 10px;
+		&__btns {
+			display: none;
+		}
+	}
+}
+
+@media screen and (width <=768px) {
+	.carousel-item {
+		grid-template-columns: auto;
+	}
+	.person-images{
+		width: 100%;
+		min-width: 290px;
+	}
+}
